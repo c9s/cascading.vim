@@ -8,14 +8,14 @@
 let g:cascading_char = {
       \ "php": [ '\(\w\|)\)\@<=->\(\w\{5,}\)\@=' ,  "\->" ],
       \ "ruby": [ '\(\w\|)\)\@<=\.\(\w\{5,}\)\@=' , "." ],
-      \ "perl": [ '\(\w\|)\)\@<=->\(\w\{5,}\)\@=' , "\->" ]
+      \ "perl": [ '\(\w\|)\)\@<=->\(\w\{5,}\)\@=' , "\->" ],
+      \ "javascript": [ '\(\w\|)\)\@<=\.\(\w\{3,}\)\@=' , "." ],
       \ }
 
 " blahsdjfieji->
 fun! s:cascading(a1,a2)
   let mode = "start"
   let ft = &filetype
-  let ft = 'php'
 
   if ! has_key( g:cascading_char , ft )
     return
