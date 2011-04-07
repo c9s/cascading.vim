@@ -15,4 +15,8 @@ Press `--` to convert line into
         ->very_long_long_long_long( )
 
 
+## Supported File Types
 
+* php
+* perl
+* ruby
